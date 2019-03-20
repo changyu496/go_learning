@@ -34,5 +34,7 @@ func TestSliceShareMemory(t *testing.T) {
 func TestSliceCompare(t *testing.T) {
 	a := []int{1, 2, 3, 4}
 	b := []int{1, 2, 3, 4}
-	t.Log(a == b)
+	t.Log(a)
+	t.Log(b)
+	// t.Log(a == b)
 }
