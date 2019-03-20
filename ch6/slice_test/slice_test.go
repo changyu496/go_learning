@@ -29,3 +29,10 @@ func TestSliceShareMemory(t *testing.T) {
 	t.Log(q3, len(q3), cap(q3))
 	t.Log(year, len(year), cap(year))
 }
+
+/*Go语言中，切片除了和nil以外，不能比较，这是和数组很大的区别*/
+func TestSliceCompare(t *testing.T) {
+	a := []int{1, 2, 3, 4}
+	b := []int{1, 2, 3, 4}
+	t.Log(a == b)
+}
