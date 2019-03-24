@@ -18,7 +18,7 @@ func TestStringFn(t *testing.T) {
 func TestConv(t *testing.T) {
 	s := strconv.Itoa(10)
 	t.Logf("%s", s)
-	if v, err := strconv.Atoi("10"); err == nil {
+	if v, err := strconv.Atoi("10"); err =	= nil {
 		t.Log(v)
 	}
 }
