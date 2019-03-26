@@ -34,3 +34,5 @@ if语句支持赋值语句
 switch/case支持多个值，不需要写break
 
 switch 也有类似于 if/else的用法
+
+### 第六章 数组和切片
