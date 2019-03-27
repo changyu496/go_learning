@@ -17,7 +17,7 @@ type Employee struct {
 // }
 
 func (e *Employee) String() string {
-	fmt.Printf("Address:%x\r\n", unsafe.Pointer(e))
+	fmt.Printf("Address:%x\r\n", unsafe.Pointer(&e.Name))
 	return fmt.Sprintf("ID:%d-Name:%s Age:%d", e.ID, e.Name, e.Age)
 }
 
@@ -37,5 +37,6 @@ func TestCreateEmployObj(t *testing.T) {
 
 func TestOperateObjFunc(t *testing.T) {
 	e := Employee{1, "ChangYu", 28}
+	fmt.Printf("Address:%x\r\n", &e.Name)
 	fmt.Print(e.String())
 }
