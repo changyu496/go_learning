@@ -31,6 +31,7 @@ type Dog struct {
 // }
 
 func TestDog(t *testing.T) {
+	// Go 不支持强制类型转换
 	dog := new(Dog)
 	dog.SpeakTo("Yu")
 }
